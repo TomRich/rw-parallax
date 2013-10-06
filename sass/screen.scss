@@ -5,15 +5,95 @@
 
 @import "compass/reset";
 
+body {
+	background: #F0F0F0;
+}
+
+a {
+	text-decoration: none;
+}
+
 header {
-	height: 70px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 500;
-	background: #202020;
-	opacity: 0.85;
-	-webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
+	background: #313945;
+    padding: 15px 0 10px 0;
+    div.nav-container {
+    	text-align: center;
+    	padding: 10px 10px 7px;
+    }
+    img {
+    	display: none;
+    	width: 90px;
+    	height: 90px;
+    	opacity: 1;
+    	margin-bottom: 17px;
+    	margin-top: -8px;
+    }
+    nav {	 
+    	margin-top: -5px;
+		    ul {
+		    	list-style: none;
+		    		li {
+		    			display: block;
+		    			margin-bottom: 10px;
+		    			a {
+		    					font-family: 'Lato', sans-serif;
+								font-weight: 400;
+								font-size: 15px;
+								letter-spacing: 2px;
+								color: #BBBBBB;
+								text-transform: uppercase;
+
+								-o-transition:.5s;
+							  	-ms-transition:.5s;
+							  	-moz-transition:.5s;
+							  	-webkit-transition:.5s;
+							  	transition:.5s;
+		    			}
+		    			a:hover {
+		    				color: #2270b1;
+		    			}
+		    		}
+		    		li:nth-child(3) {display: none;}
+		    		li:nth-child(4) {margin-bottom: 5px;}
+		    		li:nth-child(5) {display: none;}
+		    }
+	}
+}
+
+section.scroller{
+	height: 400px;
+	width: 100%;
+	margin-top: 106px;
+	position: absolute;
+	overflow: hidden;
+	background: url(../img/banner.jpg);
+	background-position: 2600px 0px;
+}
+
+section.filler {
+	height: 2000px;
+	background: #F0F0F0;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 600px) {
+	header {
+		height: 106px;
+	}
+
+	header nav  ul li {
+		display: inline;
+	}
+}
+@media screen and (min-width: 1200px) {
+	section.scroller {
+		background-position: 0px 0px;
+	}
 }
