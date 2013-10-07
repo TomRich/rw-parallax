@@ -1,7 +1,7 @@
 /* line 2, ../sass/header.scss */
 header {
   width: 100%;
-  height: 106px;
+  height: 90px;
   position: fixed;
   top: 0;
   z-index: 500;
@@ -15,14 +15,14 @@ header div.nav-container {
 /* line 13, ../sass/header.scss */
 header img {
   display: none;
-  width: 80px;
-  height: 80px;
-  margin-top: -10px;
-  margin-right: 3px;
+  width: 70px;
+  height: 70px;
+  margin-top: -13px;
+  margin-right: 2px;
 }
 /* line 20, ../sass/header.scss */
 header nav {
-  margin-top: -5px;
+  margin-top: -13px;
 }
 /* line 22, ../sass/header.scss */
 header nav ul {
@@ -68,7 +68,7 @@ header nav ul li:last-child {
 section.scroller {
   height: 300px;
   width: 100%;
-  margin-top: 106px;
+  margin-top: 90px;
   position: absolute;
   overflow: hidden;
   background: url(../img/bannermobile.jpg);

@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
 
-
-    $(window).stellar();
+$(window).stellar();
 
     var links = $('.navigation').find('li');
     slide = $('.slide');

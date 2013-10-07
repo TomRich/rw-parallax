@@ -1,19 +1,19 @@
 @media (min-width: 600px) {
-  /* line 6, ../sass/mediaqueries.scss */
+  /* line 7, ../sass/mediaqueries.scss */
   header nav ul {
-    padding-top: 27px;
+    padding-top: 26px;
   }
-  /* line 8, ../sass/mediaqueries.scss */
+  /* line 9, ../sass/mediaqueries.scss */
   header nav ul li {
     display: inline;
     margin-right: 25px;
   }
-  /* line 11, ../sass/mediaqueries.scss */
+  /* line 12, ../sass/mediaqueries.scss */
   header nav ul li a {
     font-size: 17px;
   }
 
-  /* line 16, ../sass/mediaqueries.scss */
+  /* line 17, ../sass/mediaqueries.scss */
   section.scroller {
     height: 400px;
     background: url(../img/banner.jpg);
@@ -21,34 +21,34 @@
   }
 }
 @media (min-width: 850px) {
-  /* line 25, ../sass/mediaqueries.scss */
+  /* line 26, ../sass/mediaqueries.scss */
   header img {
     float: right;
     display: inline;
   }
 
-  /* line 30, ../sass/mediaqueries.scss */
+  /* line 31, ../sass/mediaqueries.scss */
   header nav {
     display: inline;
     float: left;
   }
-  /* line 34, ../sass/mediaqueries.scss */
+  /* line 35, ../sass/mediaqueries.scss */
   header nav ul {
     margin-left: 10px;
   }
 
-  /* line 39, ../sass/mediaqueries.scss */
+  /* line 40, ../sass/mediaqueries.scss */
   header nav ul li:nth-child(3) {
     display: inline;
   }
 
-  /* line 40, ../sass/mediaqueries.scss */
+  /* line 41, ../sass/mediaqueries.scss */
   header nav ul li:first-child {
     margin-left: 25px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 43, ../sass/mediaqueries.scss */
+  /* line 44, ../sass/mediaqueries.scss */
   section.scroller {
     background-position: 0px 0px;
   }
