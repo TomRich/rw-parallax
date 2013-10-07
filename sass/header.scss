@@ -12,11 +12,10 @@ header {
     }
     img {
     	display: none;
-    	width: 90px;
-    	height: 90px;
-    	opacity: 1;
-    	margin-bottom: 17px;
-    	margin-top: -8px;
+    	width: 80px;
+    	height: 80px;
+    	margin-top: -10px;
+    	margin-right: 3px;
     }
     nav {	 
     	margin-top: -5px;
@@ -45,17 +44,17 @@ header {
 		    		}
 		    		li:nth-child(3) {display: none;}
 		    		li:nth-child(4) {margin-bottom: 5px;}
-		    		li:nth-child(5) {display: none;}
+		    		li:last-child {margin-right: 0;}
 		    }
 	}
 }
 
 section.scroller{
-	height: 400px;
+	height: 300px;
 	width: 100%;
 	margin-top: 106px;
 	position: absolute;
 	overflow: hidden;
-	background: url(../img/banner.jpg);
-	background-position: 2600px 0px;
+	background: url(../img/bannermobile.jpg);
+	background-position: 2250px 0px;
 }

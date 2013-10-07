@@ -2,13 +2,44 @@
 
 }
 
-@media screen and (min-width: 600px) {
-
-	header nav  ul li {
-		display: inline;
+@media (min-width: 600px) {
+	header nav ul {
+	padding-top: 27px;
+		li {
+			display: inline;
+			margin-right: 25px;
+			a {
+				font-size: 17px;
+			}
+		}
+	}
+	section.scroller {
+		height: 400px;
+		background: url(../img/banner.jpg);
+		background-position: 850px 0px;
 	}
 }
-@media screen and (min-width: 1200px) {
+
+@media (min-width: 850px) {
+
+	header img {
+		float: right;
+		display: inline;
+	}
+
+	header nav {
+		display: inline;
+		float: left;
+
+		ul {
+			margin-left: 10px;
+		}
+	}
+
+	header nav ul li:nth-child(3) {display:inline;}
+	header nav ul li:first-child {margin-left: 25px;}
+}
+@media (min-width: 1200px) {
 	section.scroller {
 		background-position: 0px 0px;
 	}

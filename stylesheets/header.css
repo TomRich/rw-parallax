@@ -15,26 +15,25 @@ header div.nav-container {
 /* line 13, ../sass/header.scss */
 header img {
   display: none;
-  width: 90px;
-  height: 90px;
-  opacity: 1;
-  margin-bottom: 17px;
-  margin-top: -8px;
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-right: 3px;
 }
-/* line 21, ../sass/header.scss */
+/* line 20, ../sass/header.scss */
 header nav {
   margin-top: -5px;
 }
-/* line 23, ../sass/header.scss */
+/* line 22, ../sass/header.scss */
 header nav ul {
   list-style: none;
 }
-/* line 25, ../sass/header.scss */
+/* line 24, ../sass/header.scss */
 header nav ul li {
   display: block;
   margin-bottom: 10px;
 }
-/* line 28, ../sass/header.scss */
+/* line 27, ../sass/header.scss */
 header nav ul li a {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -48,30 +47,30 @@ header nav ul li a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 42, ../sass/header.scss */
+/* line 41, ../sass/header.scss */
 header nav ul li a:hover {
   color: #2270b1;
 }
-/* line 46, ../sass/header.scss */
+/* line 45, ../sass/header.scss */
 header nav ul li:nth-child(3) {
   display: none;
 }
-/* line 47, ../sass/header.scss */
+/* line 46, ../sass/header.scss */
 header nav ul li:nth-child(4) {
   margin-bottom: 5px;
 }
-/* line 48, ../sass/header.scss */
-header nav ul li:nth-child(5) {
-  display: none;
+/* line 47, ../sass/header.scss */
+header nav ul li:last-child {
+  margin-right: 0;
 }
 
-/* line 53, ../sass/header.scss */
+/* line 52, ../sass/header.scss */
 section.scroller {
-  height: 400px;
+  height: 300px;
   width: 100%;
   margin-top: 106px;
   position: absolute;
   overflow: hidden;
-  background: url(../img/banner.jpg);
-  background-position: 2600px 0px;
+  background: url(../img/bannermobile.jpg);
+  background-position: 2250px 0px;
 }
