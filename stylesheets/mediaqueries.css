@@ -1,0 +1,12 @@
+@media screen and (min-width: 600px) {
+  /* line 7, ../sass/mediaqueries.scss */
+  header nav ul li {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 12, ../sass/mediaqueries.scss */
+  section.scroller {
+    background-position: 0px 0px;
+  }
+}

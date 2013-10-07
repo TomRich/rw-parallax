@@ -67,31 +67,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
-body {
-  background: #F0F0F0;
-}
-
-/* line 12, ../sass/screen.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 16, ../sass/screen.scss */
+/* line 2, ../sass/header.scss */
 header {
   width: 100%;
+  height: 106px;
   position: fixed;
   top: 0;
   z-index: 500;
   background: #313945;
-  padding: 15px 0 10px 0;
 }
-/* line 23, ../sass/screen.scss */
+/* line 9, ../sass/header.scss */
 header div.nav-container {
   text-align: center;
-  padding: 10px 10px 7px;
+  padding: 24px 10px 7px;
 }
-/* line 27, ../sass/screen.scss */
+/* line 13, ../sass/header.scss */
 header img {
   display: none;
   width: 90px;
@@ -100,20 +90,20 @@ header img {
   margin-bottom: 17px;
   margin-top: -8px;
 }
-/* line 35, ../sass/screen.scss */
+/* line 21, ../sass/header.scss */
 header nav {
   margin-top: -5px;
 }
-/* line 37, ../sass/screen.scss */
+/* line 23, ../sass/header.scss */
 header nav ul {
   list-style: none;
 }
-/* line 39, ../sass/screen.scss */
+/* line 25, ../sass/header.scss */
 header nav ul li {
   display: block;
   margin-bottom: 10px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 28, ../sass/header.scss */
 header nav ul li a {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -127,24 +117,24 @@ header nav ul li a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 56, ../sass/screen.scss */
+/* line 42, ../sass/header.scss */
 header nav ul li a:hover {
   color: #2270b1;
 }
-/* line 60, ../sass/screen.scss */
+/* line 46, ../sass/header.scss */
 header nav ul li:nth-child(3) {
   display: none;
 }
-/* line 61, ../sass/screen.scss */
+/* line 47, ../sass/header.scss */
 header nav ul li:nth-child(4) {
   margin-bottom: 5px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 48, ../sass/header.scss */
 header nav ul li:nth-child(5) {
   display: none;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 53, ../sass/header.scss */
 section.scroller {
   height: 400px;
   width: 100%;
@@ -155,25 +145,50 @@ section.scroller {
   background-position: 2600px 0px;
 }
 
-/* line 77, ../sass/screen.scss */
+@media screen and (min-width: 600px) {
+  /* line 7, ../sass/mediaqueries.scss */
+  header nav ul li {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 12, ../sass/mediaqueries.scss */
+  section.scroller {
+    background-position: 0px 0px;
+  }
+}
+/* line 10, ../sass/screen.scss */
+body {
+  background: #F0F0F0;
+}
+
+/* line 14, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, ../sass/screen.scss */
 section.filler {
   height: 2000px;
   background: #F0F0F0;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 87, ../sass/screen.scss */
-  header {
-    height: 106px;
+  /* line 29, ../sass/screen.scss */
+  header nav ul {
+    padding-top: 30px;
   }
-
-  /* line 91, ../sass/screen.scss */
+  /* line 31, ../sass/screen.scss */
   header nav ul li {
     display: inline;
   }
+  /* line 34, ../sass/screen.scss */
+  header nav ul li a {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  /* line 96, ../sass/screen.scss */
+  /* line 41, ../sass/screen.scss */
   section.scroller {
     background-position: 0px 0px;
   }
