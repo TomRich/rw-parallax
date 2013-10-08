@@ -208,47 +208,64 @@ span.socialiseheader {
 }
 
 /* line 52, ../sass/mainbody.scss */
-.iconcontainer {
+div.iconwrapper {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* line 57, ../sass/mainbody.scss */
+div.iconcontainer {
+  width: 200px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: block;
 }
-/* line 57, ../sass/mainbody.scss */
-.iconcontainer a.iconY, .iconcontainer a.iconY:hover, .iconcontainer a.iconG, .iconcontainer a.iconG:hover, .iconcontainer a.iconT, .iconcontainer a.iconT:hover {
+
+/* line 67, ../sass/mainbody.scss */
+#iconY, #iconY:hover, #iconG, #iconG:hover, #iconT, #iconT:hover {
   background: url(../img/sprites.png) no-repeat;
 }
-/* line 61, ../sass/mainbody.scss */
-.iconcontainer a.iconY {
+
+/* line 71, ../sass/mainbody.scss */
+#iconY {
   background-position: 0 0;
   width: 200px;
   height: 200px;
 }
-/* line 67, ../sass/mainbody.scss */
-.iconcontainer a.iconY:hover {
+
+/* line 77, ../sass/mainbody.scss */
+#iconY:hover {
   background-position: 0 -250px;
   width: 200px;
   height: 200px;
 }
-/* line 73, ../sass/mainbody.scss */
-.iconcontainer a.iconG {
+
+/* line 83, ../sass/mainbody.scss */
+#iconG {
   background-position: 0 -500px;
   width: 200px;
   height: 200px;
 }
-/* line 79, ../sass/mainbody.scss */
-.iconcontainer a.iconG:hover {
+
+/* line 89, ../sass/mainbody.scss */
+#iconG:hover {
   background-position: 0 -750px;
   width: 200px;
   height: 200px;
 }
-/* line 85, ../sass/mainbody.scss */
-.iconcontainer a.iconT {
+
+/* line 95, ../sass/mainbody.scss */
+#iconT {
   background-position: 0 -1000px;
   width: 200px;
   height: 200px;
 }
-/* line 91, ../sass/mainbody.scss */
-.iconcontainer a.iconT:hover {
+
+/* line 101, ../sass/mainbody.scss */
+#iconT:hover {
   background-position: 0 -1250px;
   width: 200px;
   height: 200px;

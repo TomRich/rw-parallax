@@ -15,7 +15,7 @@ a {
 .hero {
 	padding: 20px 0 20px 0;
 	width: 100%;
-	background: $grey;
+	background: #e3e1e1;
 }
 
 #hero-text {
@@ -49,49 +49,59 @@ span.socialiseheader {
 	-webkit-font-smoothing:antialiased;
 }
 
-.iconcontainer {
+div.iconwrapper {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+div.iconcontainer {
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	display: block;
+}
 
-	a.iconY, a.iconY:hover, a.iconG, a.iconG:hover, a.iconT, a.iconT:hover{
+	#iconY, #iconY:hover, #iconG, #iconG:hover, #iconT, #iconT:hover{
 	background: url(../img/sprites.png) no-repeat;
 }
 
-a.iconY{
+#iconY{
 	background-position: 0 0;
 	width: 200px;
 	height: 200px;
 }
 
-a.iconY:hover{
+#iconY:hover{
 	background-position: 0 -250px ;
 	width: 200px;
 	height: 200px;
 }
 
-a.iconG{
+#iconG{
 	background-position: 0 -500px ;
 	width: 200px;
 	height: 200px;
 }
 
-a.iconG:hover{
+#iconG:hover{
 	background-position: 0 -750px ;
 	width: 200px;
 	height: 200px;
 }
 
-a.iconT{
+#iconT{
 	background-position: 0 -1000px ;
 	width: 200px;
 	height: 200px;
 }
 
-a.iconT:hover{
+#iconT:hover{
 	background-position: 0 -1250px ;
 	width: 200px;
 	height: 200px;
 }
-}
+
 
