@@ -69,40 +69,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 2, ../sass/header.scss */
 header {
+  display: block;
   width: 100%;
   height: 90px;
   position: fixed;
   top: 0;
   z-index: 500;
   background: #313945;
+  transition: all 0.4s ease-in-out;
 }
-/* line 9, ../sass/header.scss */
+/* line 11, ../sass/header.scss */
 header div.nav-container {
   text-align: center;
   padding: 24px 10px 7px;
 }
-/* line 13, ../sass/header.scss */
+/* line 15, ../sass/header.scss */
 header img {
   display: none;
   width: 70px;
   height: 70px;
   margin-top: -13px;
   margin-right: 2px;
+  transition: all 0.4s ease-in-out;
 }
-/* line 20, ../sass/header.scss */
+/* line 23, ../sass/header.scss */
 header nav {
   margin-top: -13px;
 }
-/* line 22, ../sass/header.scss */
+/* line 25, ../sass/header.scss */
 header nav ul {
   list-style: none;
+  transition: all 0.4s ease-in-out;
 }
-/* line 24, ../sass/header.scss */
+/* line 28, ../sass/header.scss */
 header nav ul li {
   display: block;
   margin-bottom: 10px;
 }
-/* line 27, ../sass/header.scss */
+/* line 31, ../sass/header.scss */
 header nav ul li a {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -116,101 +120,238 @@ header nav ul li a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 41, ../sass/header.scss */
+/* line 45, ../sass/header.scss */
 header nav ul li a:hover {
   color: #2270b1;
 }
-/* line 45, ../sass/header.scss */
+/* line 49, ../sass/header.scss */
 header nav ul li:nth-child(3) {
   display: none;
 }
-/* line 46, ../sass/header.scss */
+/* line 50, ../sass/header.scss */
 header nav ul li:nth-child(4) {
   margin-bottom: 5px;
 }
-/* line 47, ../sass/header.scss */
+/* line 51, ../sass/header.scss */
 header nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 52, ../sass/header.scss */
+/* line 56, ../sass/header.scss */
 section.scroller {
+  display: block;
   height: 300px;
   width: 100%;
-  margin-top: 90px;
-  position: absolute;
+  position: relative;
+  top: 40px;
   overflow: hidden;
   background: url(../img/bannermobile.jpg);
   background-position: 2250px 0px;
 }
 
-@media (min-width: 600px) {
+/* line 1, ../sass/mainbody.scss */
+body {
+  background: #F0F0F0;
+}
+
+/* line 5, ../sass/mainbody.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, ../sass/mainbody.scss */
+.mainbody {
+  position: relative;
+  margin-top: 40px;
+  display: block;
+}
+
+/* line 15, ../sass/mainbody.scss */
+.hero {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  background: #e3e1e1;
+}
+
+/* line 21, ../sass/mainbody.scss */
+#hero-text {
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: 'Raleway' sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #8e99a1;
+}
+
+/* line 34, ../sass/mainbody.scss */
+div.socialise {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 40, ../sass/mainbody.scss */
+span.socialiseheader {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #313945;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e3e1e1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 52, ../sass/mainbody.scss */
+.iconcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* line 57, ../sass/mainbody.scss */
+.iconcontainer a.iconY, .iconcontainer a.iconY:hover, .iconcontainer a.iconG, .iconcontainer a.iconG:hover, .iconcontainer a.iconT, .iconcontainer a.iconT:hover {
+  background: url(../img/sprites.png) no-repeat;
+}
+/* line 61, ../sass/mainbody.scss */
+.iconcontainer a.iconY {
+  background-position: 0 0;
+  width: 200px;
+  height: 200px;
+}
+/* line 67, ../sass/mainbody.scss */
+.iconcontainer a.iconY:hover {
+  background-position: 0 -250px;
+  width: 200px;
+  height: 200px;
+}
+/* line 73, ../sass/mainbody.scss */
+.iconcontainer a.iconG {
+  background-position: 0 -500px;
+  width: 200px;
+  height: 200px;
+}
+/* line 79, ../sass/mainbody.scss */
+.iconcontainer a.iconG:hover {
+  background-position: 0 -750px;
+  width: 200px;
+  height: 200px;
+}
+/* line 85, ../sass/mainbody.scss */
+.iconcontainer a.iconT {
+  background-position: 0 -1000px;
+  width: 200px;
+  height: 200px;
+}
+/* line 91, ../sass/mainbody.scss */
+.iconcontainer a.iconT:hover {
+  background-position: 0 -1250px;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 2, ../sass/mediaqueries.scss */
+  #hero-text {
+    width: 70%;
+    font-size: 22px;
+  }
+
   /* line 7, ../sass/mediaqueries.scss */
+  span.socialiseheader {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 14, ../sass/mediaqueries.scss */
   header nav ul {
     padding-top: 26px;
   }
-  /* line 9, ../sass/mediaqueries.scss */
+  /* line 16, ../sass/mediaqueries.scss */
   header nav ul li {
     display: inline;
     margin-right: 25px;
   }
-  /* line 12, ../sass/mediaqueries.scss */
+  /* line 19, ../sass/mediaqueries.scss */
   header nav ul li a {
     font-size: 17px;
   }
 
-  /* line 17, ../sass/mediaqueries.scss */
+  /* line 24, ../sass/mediaqueries.scss */
   section.scroller {
-    height: 400px;
+    height: 380px;
     background: url(../img/banner.jpg);
     background-position: 850px 0px;
   }
+
+  /* line 30, ../sass/mediaqueries.scss */
+  .hero {
+    padding: 30px 0 30px 0;
+  }
+
+  /* line 34, ../sass/mediaqueries.scss */
+  #hero-text {
+    width: 70%;
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  /* line 40, ../sass/mediaqueries.scss */
+  span.socialiseheader {
+    font-size: 90px;
+    line-height: 80px;
+  }
 }
-@media (min-width: 850px) {
-  /* line 26, ../sass/mediaqueries.scss */
+@media screen and (min-width: 850px) {
+  /* line 48, ../sass/mediaqueries.scss */
+  header.tiny {
+    height: 40px;
+  }
+
+  /* line 52, ../sass/mediaqueries.scss */
+  header.tiny nav ul {
+    padding-top: 1px;
+  }
+
+  /* line 56, ../sass/mediaqueries.scss */
+  header.tiny img {
+    height: 0px;
+    width: 0px;
+  }
+
+  /* line 61, ../sass/mediaqueries.scss */
   header img {
     float: right;
     display: inline;
   }
 
-  /* line 31, ../sass/mediaqueries.scss */
+  /* line 66, ../sass/mediaqueries.scss */
   header nav {
     display: inline;
     float: left;
   }
-  /* line 35, ../sass/mediaqueries.scss */
+  /* line 70, ../sass/mediaqueries.scss */
   header nav ul {
     margin-left: 10px;
   }
 
-  /* line 40, ../sass/mediaqueries.scss */
+  /* line 75, ../sass/mediaqueries.scss */
   header nav ul li:nth-child(3) {
     display: inline;
   }
 
-  /* line 41, ../sass/mediaqueries.scss */
+  /* line 76, ../sass/mediaqueries.scss */
   header nav ul li:first-child {
     margin-left: 25px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 44, ../sass/mediaqueries.scss */
+  /* line 79, ../sass/mediaqueries.scss */
   section.scroller {
     background-position: 0px 0px;
   }
-}
-/* line 10, ../sass/screen.scss */
-body {
-  background: #F0F0F0;
-}
-
-/* line 14, ../sass/screen.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 18, ../sass/screen.scss */
-section.filler {
-  height: 2000px;
-  background: #F0F0F0;
 }

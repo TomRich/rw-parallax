@@ -1,0 +1,97 @@
+body {
+	background: #F0F0F0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.mainbody {
+	position: relative;
+	margin-top: 40px;
+	display: block;
+}
+
+.hero {
+	padding: 20px 0 20px 0;
+	width: 100%;
+	background: $grey;
+}
+
+#hero-text {
+	display: block;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-family: 'Raleway' sans-serif;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 35px;
+	color: $textcolor;
+}
+
+div.socialise {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+span.socialiseheader {
+	font-family: 'Montserrat' sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $darkblue;
+	padding-bottom: 15px;
+	border-bottom: 2px solid $grey;
+	-webkit-font-smoothing:antialiased;
+}
+
+.iconcontainer {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+	a.iconY, a.iconY:hover, a.iconG, a.iconG:hover, a.iconT, a.iconT:hover{
+	background: url(../img/sprites.png) no-repeat;
+}
+
+a.iconY{
+	background-position: 0 0;
+	width: 200px;
+	height: 200px;
+}
+
+a.iconY:hover{
+	background-position: 0 -250px ;
+	width: 200px;
+	height: 200px;
+}
+
+a.iconG{
+	background-position: 0 -500px ;
+	width: 200px;
+	height: 200px;
+}
+
+a.iconG:hover{
+	background-position: 0 -750px ;
+	width: 200px;
+	height: 200px;
+}
+
+a.iconT{
+	background-position: 0 -1000px ;
+	width: 200px;
+	height: 200px;
+}
+
+a.iconT:hover{
+	background-position: 0 -1250px ;
+	width: 200px;
+	height: 200px;
+}
+}
+

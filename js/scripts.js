@@ -1,5 +1,13 @@
 jQuery(document).ready(function ($) {
 
+$(window).scroll(function () {
+  if ($(document).scrollTop() == 0) {
+    $('header').removeClass('tiny');
+  } else {
+    $('header').addClass('tiny');
+  }
+});
+
 $(window).stellar();
 
     var links = $('.navigation').find('li');
