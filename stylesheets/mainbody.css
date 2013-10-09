@@ -81,30 +81,29 @@ div.iconcontainer {
 /* line 73, ../sass/mainbody.scss */
 #iconY {
   background-position: 0 0;
-  -webkit-filter: grayscale(100%);
 }
 
-/* line 78, ../sass/mainbody.scss */
+/* line 77, ../sass/mainbody.scss */
 #iconY:hover {
   background-position: 0 -250px;
 }
 
-/* line 82, ../sass/mainbody.scss */
+/* line 81, ../sass/mainbody.scss */
 #iconG {
   background-position: 0 -500px;
 }
 
-/* line 86, ../sass/mainbody.scss */
+/* line 85, ../sass/mainbody.scss */
 #iconG:hover {
   background-position: 0 -750px;
 }
 
-/* line 90, ../sass/mainbody.scss */
+/* line 89, ../sass/mainbody.scss */
 #iconT {
   background-position: 0 -1000px;
 }
 
-/* line 94, ../sass/mainbody.scss */
+/* line 93, ../sass/mainbody.scss */
 #iconT:hover {
   background-position: 0 -1250px;
 }
