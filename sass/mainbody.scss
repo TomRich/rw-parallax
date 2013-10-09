@@ -1,3 +1,5 @@
+@import "base";
+
 body {
 	background: #F0F0F0;
 }
@@ -70,38 +72,27 @@ div.iconcontainer {
 
 #iconY{
 	background-position: 0 0;
-	width: 200px;
-	height: 200px;
+	-webkit-filter: grayscale(100%);
 }
 
 #iconY:hover{
 	background-position: 0 -250px ;
-	width: 200px;
-	height: 200px;
 }
 
 #iconG{
 	background-position: 0 -500px ;
-	width: 200px;
-	height: 200px;
 }
 
 #iconG:hover{
-	background-position: 0 -750px ;
-	width: 200px;
-	height: 200px;
+	background-position: 0 -750px ;	
 }
 
 #iconT{
 	background-position: 0 -1000px ;
-	width: 200px;
-	height: 200px;
 }
 
 #iconT:hover{
 	background-position: 0 -1250px ;
-	width: 200px;
-	height: 200px;
 }
 
 

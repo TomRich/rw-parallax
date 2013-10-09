@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 2, ../sass/header.scss */
+/* line 3, ../sass/header.scss */
 header {
   display: block;
   width: 100%;
@@ -78,12 +78,12 @@ header {
   background: #313945;
   transition: all 0.4s ease-in-out;
 }
-/* line 11, ../sass/header.scss */
+/* line 12, ../sass/header.scss */
 header div.nav-container {
   text-align: center;
   padding: 24px 10px 7px;
 }
-/* line 15, ../sass/header.scss */
+/* line 16, ../sass/header.scss */
 header img {
   display: none;
   width: 70px;
@@ -92,21 +92,21 @@ header img {
   margin-right: 2px;
   transition: all 0.4s ease-in-out;
 }
-/* line 23, ../sass/header.scss */
+/* line 24, ../sass/header.scss */
 header nav {
   margin-top: -13px;
 }
-/* line 25, ../sass/header.scss */
+/* line 26, ../sass/header.scss */
 header nav ul {
   list-style: none;
   transition: all 0.4s ease-in-out;
 }
-/* line 28, ../sass/header.scss */
+/* line 29, ../sass/header.scss */
 header nav ul li {
   display: block;
   margin-bottom: 10px;
 }
-/* line 31, ../sass/header.scss */
+/* line 32, ../sass/header.scss */
 header nav ul li a {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -114,30 +114,33 @@ header nav ul li a {
   letter-spacing: 2px;
   color: #BBBBBB;
   text-transform: uppercase;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 45, ../sass/header.scss */
+/* line 43, ../sass/header.scss */
 header nav ul li a:hover {
   color: #2270b1;
 }
-/* line 49, ../sass/header.scss */
+/* line 47, ../sass/header.scss */
 header nav ul li:nth-child(3) {
   display: none;
 }
-/* line 50, ../sass/header.scss */
+/* line 48, ../sass/header.scss */
 header nav ul li:nth-child(4) {
   margin-bottom: 5px;
 }
-/* line 51, ../sass/header.scss */
+/* line 49, ../sass/header.scss */
 header nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 56, ../sass/header.scss */
+/* line 54, ../sass/header.scss */
 section.scroller {
   display: block;
   height: 300px;
@@ -149,31 +152,31 @@ section.scroller {
   background-position: 2250px 0px;
 }
 
-/* line 1, ../sass/mainbody.scss */
+/* line 3, ../sass/mainbody.scss */
 body {
   background: #F0F0F0;
 }
 
-/* line 5, ../sass/mainbody.scss */
+/* line 7, ../sass/mainbody.scss */
 a {
   text-decoration: none;
 }
 
-/* line 9, ../sass/mainbody.scss */
+/* line 11, ../sass/mainbody.scss */
 .mainbody {
   position: relative;
   margin-top: 40px;
   display: block;
 }
 
-/* line 15, ../sass/mainbody.scss */
+/* line 17, ../sass/mainbody.scss */
 .hero {
   padding: 20px 0 20px 0;
   width: 100%;
   background: #e3e1e1;
 }
 
-/* line 21, ../sass/mainbody.scss */
+/* line 23, ../sass/mainbody.scss */
 #hero-text {
   display: block;
   width: 80%;
@@ -187,14 +190,14 @@ a {
   color: #8e99a1;
 }
 
-/* line 34, ../sass/mainbody.scss */
+/* line 36, ../sass/mainbody.scss */
 div.socialise {
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 40, ../sass/mainbody.scss */
+/* line 42, ../sass/mainbody.scss */
 span.socialiseheader {
   font-family: 'Montserrat' sans-serif;
   font-weight: bold;
@@ -207,13 +210,13 @@ span.socialiseheader {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 52, ../sass/mainbody.scss */
+/* line 54, ../sass/mainbody.scss */
 div.iconwrapper {
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-/* line 57, ../sass/mainbody.scss */
+/* line 59, ../sass/mainbody.scss */
 div.iconcontainer {
   width: 200px;
   height: 200px;
@@ -224,150 +227,165 @@ div.iconcontainer {
   display: block;
 }
 
-/* line 67, ../sass/mainbody.scss */
+/* line 69, ../sass/mainbody.scss */
 #iconY, #iconY:hover, #iconG, #iconG:hover, #iconT, #iconT:hover {
   background: url(../img/sprites.png) no-repeat;
 }
 
-/* line 71, ../sass/mainbody.scss */
+/* line 73, ../sass/mainbody.scss */
 #iconY {
   background-position: 0 0;
-  width: 200px;
-  height: 200px;
+  -webkit-filter: grayscale(100%);
 }
 
-/* line 77, ../sass/mainbody.scss */
+/* line 78, ../sass/mainbody.scss */
 #iconY:hover {
   background-position: 0 -250px;
-  width: 200px;
-  height: 200px;
 }
 
-/* line 83, ../sass/mainbody.scss */
+/* line 82, ../sass/mainbody.scss */
 #iconG {
   background-position: 0 -500px;
-  width: 200px;
-  height: 200px;
 }
 
-/* line 89, ../sass/mainbody.scss */
+/* line 86, ../sass/mainbody.scss */
 #iconG:hover {
   background-position: 0 -750px;
-  width: 200px;
-  height: 200px;
 }
 
-/* line 95, ../sass/mainbody.scss */
+/* line 90, ../sass/mainbody.scss */
 #iconT {
   background-position: 0 -1000px;
-  width: 200px;
-  height: 200px;
 }
 
-/* line 101, ../sass/mainbody.scss */
+/* line 94, ../sass/mainbody.scss */
 #iconT:hover {
   background-position: 0 -1250px;
-  width: 200px;
-  height: 200px;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 2, ../sass/mediaqueries.scss */
+  /* line 4, ../sass/mediaqueries.scss */
   #hero-text {
     width: 70%;
     font-size: 22px;
   }
 
-  /* line 7, ../sass/mediaqueries.scss */
+  /* line 9, ../sass/mediaqueries.scss */
   span.socialiseheader {
     font-size: 60px;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 14, ../sass/mediaqueries.scss */
+  /* line 16, ../sass/mediaqueries.scss */
   header nav ul {
     padding-top: 26px;
   }
-  /* line 16, ../sass/mediaqueries.scss */
+  /* line 18, ../sass/mediaqueries.scss */
   header nav ul li {
     display: inline;
     margin-right: 25px;
   }
-  /* line 19, ../sass/mediaqueries.scss */
+  /* line 21, ../sass/mediaqueries.scss */
   header nav ul li a {
     font-size: 17px;
   }
 
-  /* line 24, ../sass/mediaqueries.scss */
+  /* line 26, ../sass/mediaqueries.scss */
   section.scroller {
     height: 380px;
     background: url(../img/banner.jpg);
     background-position: 850px 0px;
   }
 
-  /* line 30, ../sass/mediaqueries.scss */
+  /* line 32, ../sass/mediaqueries.scss */
   .hero {
     padding: 30px 0 30px 0;
   }
 
-  /* line 34, ../sass/mediaqueries.scss */
+  /* line 36, ../sass/mediaqueries.scss */
   #hero-text {
     width: 70%;
     font-size: 23px;
     line-height: 40px;
   }
 
-  /* line 40, ../sass/mediaqueries.scss */
+  /* line 42, ../sass/mediaqueries.scss */
   span.socialiseheader {
     font-size: 90px;
     line-height: 80px;
   }
 }
+@media screen and (min-width: 700px) {
+  /* line 51, ../sass/mediaqueries.scss */
+  div.iconwrapper {
+    width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* line 57, ../sass/mediaqueries.scss */
+  div.iconcontainer {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
 @media screen and (min-width: 850px) {
-  /* line 48, ../sass/mediaqueries.scss */
+  /* line 66, ../sass/mediaqueries.scss */
   header.tiny {
     height: 40px;
   }
 
-  /* line 52, ../sass/mediaqueries.scss */
+  /* line 70, ../sass/mediaqueries.scss */
   header.tiny nav ul {
     padding-top: 1px;
   }
 
-  /* line 56, ../sass/mediaqueries.scss */
+  /* line 74, ../sass/mediaqueries.scss */
   header.tiny img {
     height: 0px;
     width: 0px;
   }
 
-  /* line 61, ../sass/mediaqueries.scss */
+  /* line 79, ../sass/mediaqueries.scss */
   header img {
     float: right;
     display: inline;
   }
 
-  /* line 66, ../sass/mediaqueries.scss */
+  /* line 84, ../sass/mediaqueries.scss */
   header nav {
     display: inline;
     float: left;
   }
-  /* line 70, ../sass/mediaqueries.scss */
+  /* line 88, ../sass/mediaqueries.scss */
   header nav ul {
     margin-left: 10px;
   }
 
-  /* line 75, ../sass/mediaqueries.scss */
+  /* line 93, ../sass/mediaqueries.scss */
   header nav ul li:nth-child(3) {
     display: inline;
   }
 
-  /* line 76, ../sass/mediaqueries.scss */
+  /* line 94, ../sass/mediaqueries.scss */
   header nav ul li:first-child {
     margin-left: 25px;
   }
+
+  /* line 96, ../sass/mediaqueries.scss */
+  div.iconwrapper {
+    width: 810px;
+  }
+
+  /* line 100, ../sass/mediaqueries.scss */
+  div.iconcontainer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 79, ../sass/mediaqueries.scss */
+  /* line 106, ../sass/mediaqueries.scss */
   section.scroller {
     background-position: 0px 0px;
   }

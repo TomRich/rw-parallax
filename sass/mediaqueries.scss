@@ -1,3 +1,5 @@
+@import "base";
+
 @media screen and (min-width: 480px) {
 #hero-text {
 	width: 70%;
@@ -43,6 +45,22 @@ span.socialiseheader {
 }
 
 }
+
+@media screen and (min-width: 700px) {
+
+	div.iconwrapper {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.iconcontainer {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+}
 @media screen and (min-width: 850px) {
 
 header.tiny{
@@ -74,6 +92,15 @@ header.tiny img {
 
 	header nav ul li:nth-child(3) {display:inline;}
 	header nav ul li:first-child {margin-left: 25px;}
+
+	div.iconwrapper {
+	width: 810px;
+}
+
+div.iconcontainer {
+	margin-left: 30px;
+	margin-right: 30px;
+}
 }
 @media (min-width: 1200px) {
 	section.scroller {

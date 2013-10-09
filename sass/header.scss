@@ -1,3 +1,4 @@
+@import "base";
 
 header {
 	display: block;
@@ -36,11 +37,8 @@ header {
 								color: #BBBBBB;
 								text-transform: uppercase;
 
-								-o-transition:.5s;
-							  	-ms-transition:.5s;
-							  	-moz-transition:.5s;
-							  	-webkit-transition:.5s;
-							  	transition:.5s;
+								@include transition-property(all);
+  								@include transition-duration(0.5s);
 		    			}
 		    			a:hover {
 		    				color: $blue;
